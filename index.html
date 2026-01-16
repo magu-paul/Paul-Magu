@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paul Magu | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff6ec4, 0 0 20px #ff6ec4; }
+      to { text-shadow: 0 0 20px #7873f5, 0 0 30px #7873f5; }
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover { color: #ff6ec4; }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #ff6ec4;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.2);
+    }
+
+    .resume-btn {
+      display: block;
+      width: max-content;
+      margin: 30px auto;
+      padding: 12px 25px;
+      background: #ff6ec4;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .resume-btn:hover {
+      background: #7873f5;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.3);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Paul Magu</h1>
+    <p>Desktop & Site Support Technician | Freelance Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a resourceful IT professional with expertise in full-stack web development,
+      infrastructure support, and freelance projects in Java, PHP, MySQL, and JavaScript.
+      I have also built games and a school placement website. Passionate about creating
+      scalable solutions that empower communities.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Job Board Platform</h3>
+        <p>A mobile-first, inclusive job board with secure admin dashboards and career categorization.</p>
+      </div>
+      <div class="project-card">
+        <h3>School Placement Website</h3>
+        <p>A web platform to streamline student placement processes, built with PHP and MySQL.</p>
+      </div>
+      <div class="project-card">
+        <h3>Games Development</h3>
+        <p>Interactive games built with JavaScript and Java, showcasing creativity and logic.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>This flashy portfolio site showcasing my skills, projects, and resume download feature.</p>
+      </div>
+    </div>
+  </section>
+
+  <a href="resume.pdf" class="resume-btn" download>Download My Resume</a>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:paul.magu.official@gmail.com" style="color:#ff6ec4;">paul.magu.official@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/magu-paul" target="_blank" style="color:#ff6ec4;">github.com/magu-paul</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/paul-magu-8b1b08361/" target="_blank" style="color:#ff6ec4;">linkedin.com/in/paul-magu</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Paul Magu | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
